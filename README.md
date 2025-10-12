@@ -157,6 +157,8 @@ _Below is an example of how you can instruct your audience on installing and set
 - [x] Support Uploading images 
 - [x] Typing indicator per channel
 - [x] Real-time online list
+- [ ] Implement efficient bulk write operations to PostgreSQL
+- [ ] Emoji
 - [ ] Mention highlighting and notifications
 - [ ] Mobile-friendly layout
 - [ ] Voice/video chat via WebRTC
