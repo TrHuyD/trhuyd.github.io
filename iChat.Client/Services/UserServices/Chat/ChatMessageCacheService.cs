@@ -235,7 +235,7 @@ namespace iChat.Client.Services.UserServices.Chat
                 throw new HttpRequestException("Failed to load latest messages", null, response.StatusCode);
 
             var dtos = await response.Content.ReadFromJsonAsync<List<BucketDto>>();
-            if (dtos == null) return;
+            if (dtos == null) dtos =new();
 
             var list = new SortedList<int, MessageBucket>();
             foreach (var dto in dtos)

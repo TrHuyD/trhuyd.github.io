@@ -121,6 +121,7 @@ namespace iChat.Client.Pages.Chat
 
                 var (latest, loc) = await MessageManager.GetLatestMessage(ChannelId);
                 _messages.Clear();
+                _renderedMessages.Clear();
 
                 MessageManager.RegisterOnMessageReceived(HandleNewMessage);
                 MessageManager.RegisterOnMessageEdited(HandleEditMessage);
